@@ -1,0 +1,36 @@
+.experience_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #A884E8;
+  flex-direction: column;
+  padding: 80px 0 60px 0;
+  transition: 0.3s linear;
+}
+.experience_container .experience_page_title {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience_container .experience_page_title h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s linear;
+}
+.experience_container .display_experience {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 0;
+  background: #7A3BE4;
+  border-radius: 25px;
+  transition: 0.3s linear;
+}/*# sourceMappingURL=Experience.css.map */

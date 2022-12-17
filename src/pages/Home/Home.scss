@@ -1,0 +1,172 @@
+@import '../../breakpoints';
+
+.home_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/HomeWaveDark.svg');
+  // background-color: rgb(22, 1, 41);
+  background-color: #fafafafa;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: 0.3s linear;
+
+  @include tablet_lg {
+    width: 100%;
+    height: 100vh;
+  }
+
+  @include tablet_xs {
+    width: 100%;
+    height: 100vh;
+  }
+
+  @include mobile_lg {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .banner {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .banner_desc {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+
+      .web_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+          font-size: 20px;
+          color: #000;
+          transition: 0.3s linear;
+          font-weight: bold;
+          letter-spacing: 4px;
+
+          @include mobile_xl {
+            font-size: 18px;
+          }
+          @include mobile_md {
+            font-size: 17px;
+          }
+          @include mobile_xs {
+            font-size: 16px;
+          }
+        }
+
+        h1 {
+          font-size: 100px;
+          letter-spacing: 15px;
+          color: #000;
+          text-transform: uppercase;
+          transition: 0.3s linear;
+
+          @include tablet_xs {
+            font-size: 80px;
+          }
+          @include mobile_xl {
+            font-size: 60px;
+          }
+          @include mobile_lg {
+            font-size: 50px;
+          }
+          @include mobile_md {
+            font-size: 40px;
+          }
+          @include mobile_xs {
+            font-size: 36px;
+          }
+        }
+      }
+
+      .web_text {
+        padding: 10px;
+        font-size: 18px;
+        color: #000;
+
+        p {
+          text-align: center;
+          transition: 0.3s linear;
+
+          @include mobile_xl {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .banner_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+
+        .join_button {
+          min-width: 200px;
+          height: 40px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white;
+          transition: 0.3s linear;
+        }
+
+        .dark_button {
+          // background: #311169;
+          background: #fff;
+          color: #000;
+
+          &:hover {
+            background: #7A3BE4;
+          }
+        }
+
+        .light_button {
+          background: #000;
+          // background: #7A3BE4;
+
+          &:hover {
+            background: #311169;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dark_home {
+  background-color: #2d2d2d;
+}
+
+// .home_container_dark {
+//   background: url('../../assets/HomeWaveDark.svg');
+//   // background-color: rgb(22, 1, 41);
+//   background-color: #fafafafa;
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+//   transition: 0.3s linear;
+// }
+
+// .home_container_light {
+//   background: url('../../assets/HomeWaveLight.svg');
+//   background-color: rgb(168, 132, 232);
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+//   transition: 0.3s linear;
+// }

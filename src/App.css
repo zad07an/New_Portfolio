@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: poppins;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 100%;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #311169;
+}
+
+.menu_background {
+  width: 100%;
+  min-height: 100vh;
+}

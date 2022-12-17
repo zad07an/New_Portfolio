@@ -1,0 +1,142 @@
+@import '../../breakpoints';
+
+.contact_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 40px 0;
+  transition: 0.3s linear;
+
+  .contact_page_title {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      transition: 0.3s linear;
+    }
+  }
+
+  .social_icons_container {
+    width: 80%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 25px;
+    position: relative;
+    transition: 0.3s linear;
+
+    @include tablet_lg {
+      min-height: 100vh;
+      padding: 140px 0 40px 0;
+    }
+
+    @include mobile_md {
+      padding: 160px 0 40px 0;
+    }
+
+    .social_icons_text {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+
+      p {
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        transition: 0.3s linear;
+        text-align: center;
+
+        @include tablet_md {
+          font-size: 22px;
+        }
+
+        @include tablet_xs {
+          font-size: 20px;
+        }
+
+        @include mobile_xl {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .social_icons {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+
+      @include desktop_lg {
+        gap: 80px;
+      }
+
+      @include desktop_md {
+        gap: 60px;
+      }
+
+      @include tablet_lg {
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      .social_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 80px;
+          color: white;
+          font-weight: bold;
+          transition: 0.3s linear;
+
+          @include mobile_xl {
+            font-size: 70px;
+          }
+
+          @include mobile_xl {
+            font-size: 60px;
+          }
+        }
+
+        span {
+          font-size: 26px;
+          color: #fff;
+          font-weight: bold;
+          transition: 0.3s linear;
+
+          @include mobile_xl {
+            font-size: 24px;
+          }
+
+          @include mobile_lg {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

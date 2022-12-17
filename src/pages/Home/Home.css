@@ -1,0 +1,155 @@
+.home_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/HomeWaveDark.svg");
+  background-color: rgba(250, 250, 250, 0.9803921569);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: 0.3s linear;
+}
+@media (max-width: 1024px) {
+  .home_container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .home_container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-width: 460px) {
+  .home_container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+.home_container .banner {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home_container .banner .banner_desc {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.home_container .banner .banner_desc .web_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.home_container .banner .banner_desc .web_title span {
+  font-size: 20px;
+  color: #000;
+  transition: 0.3s linear;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+@media (max-width: 560px) {
+  .home_container .banner .banner_desc .web_title span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 412px) {
+  .home_container .banner .banner_desc .web_title span {
+    font-size: 17px;
+  }
+}
+@media (max-width: 320px) {
+  .home_container .banner .banner_desc .web_title span {
+    font-size: 16px;
+  }
+}
+.home_container .banner .banner_desc .web_title h1 {
+  font-size: 100px;
+  letter-spacing: 15px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+@media (max-width: 768px) {
+  .home_container .banner .banner_desc .web_title h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 560px) {
+  .home_container .banner .banner_desc .web_title h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 460px) {
+  .home_container .banner .banner_desc .web_title h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 412px) {
+  .home_container .banner .banner_desc .web_title h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .home_container .banner .banner_desc .web_title h1 {
+    font-size: 36px;
+  }
+}
+.home_container .banner .banner_desc .web_text {
+  padding: 10px;
+  font-size: 18px;
+  color: #000;
+}
+.home_container .banner .banner_desc .web_text p {
+  text-align: center;
+  transition: 0.3s linear;
+}
+@media (max-width: 560px) {
+  .home_container .banner .banner_desc .web_text p {
+    font-size: 16px;
+  }
+}
+.home_container .banner .banner_desc .banner_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.home_container .banner .banner_desc .banner_buttons .join_button {
+  min-width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s linear;
+}
+.home_container .banner .banner_desc .banner_buttons .dark_button {
+  background: #fff;
+  color: #000;
+}
+.home_container .banner .banner_desc .banner_buttons .dark_button:hover {
+  background: #7A3BE4;
+}
+.home_container .banner .banner_desc .banner_buttons .light_button {
+  background: #000;
+}
+.home_container .banner .banner_desc .banner_buttons .light_button:hover {
+  background: #311169;
+}
+
+.dark_home {
+  background-color: #2d2d2d;
+}/*# sourceMappingURL=Home.css.map */
