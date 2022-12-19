@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <UseScrollToTop/>
       <Routes>
-        <Route element={<Layouts theme={theme} menu={menu} setMenu={setMenu} onShowMenu={onShowMenu} onCloseMenu={onCloseMenu} themeSwitcher={themeSwitcher}/>}>
+        <Route path='/' element={<Layouts theme={theme} menu={menu} setMenu={setMenu} onShowMenu={onShowMenu} onCloseMenu={onCloseMenu} themeSwitcher={themeSwitcher}/>}>
           <Route path='/' element={<Home theme={theme} />} />
           <Route path='/about' element={<About theme={theme} />} />
           <Route path='/projects' element={<Projects theme={theme} />} />
