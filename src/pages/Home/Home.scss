@@ -6,11 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../../assets/HomeWaveDark.svg');
-  // background-color: rgb(22, 1, 41);
-  background-color: #fafafafa;
-  background-position: bottom;
-  background-repeat: no-repeat;
   transition: 0.3s linear;
 
   @include tablet_lg {
@@ -150,8 +145,14 @@
   }
 }
 
-.dark_home {
-  background-color: #2d2d2d;
+.is_dark {
+  background: linear-gradient(21deg, rgba(0,0,0,1) 0%, rgba(113,113,113,1) 100%);
+  transition: 0.3s linear;
+}
+
+.is_light {
+  background: linear-gradient(21deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 80%);
+  transition: 0.3s linear;
 }
 
 // .home_container_dark {

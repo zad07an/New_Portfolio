@@ -32,6 +32,7 @@
   border-radius: 25px;
   position: relative;
   transition: 0.3s linear;
+  padding: 20px;
 }
 @media (max-width: 1024px) {
   .contact_container .social_icons_container {
@@ -77,26 +78,28 @@
 }
 .contact_container .social_icons_container .social_icons {
   width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
 }
 @media (max-width: 1440px) {
   .contact_container .social_icons_container .social_icons {
-    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 1220px) {
   .contact_container .social_icons_container .social_icons {
-    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 1024px) {
   .contact_container .social_icons_container .social_icons {
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .contact_container .social_icons_container .social_icons {
+    grid-template-columns: 1fr;
   }
 }
 .contact_container .social_icons_container .social_icons .social_box {

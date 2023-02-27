@@ -1,5 +1,4 @@
 .project_component_container {
-  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,21 +8,6 @@
   border-radius: 15px;
   padding: 20px;
   transition: 0.3s linear;
-}
-@media (max-width: 560px) {
-  .project_component_container {
-    width: 350px;
-  }
-}
-@media (max-width: 460px) {
-  .project_component_container {
-    width: 300px;
-  }
-}
-@media (max-width: 412px) {
-  .project_component_container {
-    width: 270px;
-  }
 }
 .project_component_container .project_component_image {
   width: 100%;

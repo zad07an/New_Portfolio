@@ -36,6 +36,7 @@
     border-radius: 25px;
     position: relative;
     transition: 0.3s linear;
+    padding: 20px;
 
     @include tablet_lg {
       min-height: 100vh;
@@ -78,23 +79,24 @@
 
     .social_icons {
       width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 100px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 40px;
 
       @include desktop_lg {
-        gap: 80px;
+        grid-template-columns: repeat(4, 1fr);
       }
 
       @include desktop_md {
-        gap: 60px;
+        grid-template-columns: repeat(3, 1fr);
       }
 
       @include tablet_lg {
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile_xl {
+        grid-template-columns: 1fr;
       }
 
       .social_box {

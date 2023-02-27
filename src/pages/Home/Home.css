@@ -4,10 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../assets/HomeWaveDark.svg");
-  background-color: rgba(250, 250, 250, 0.9803921569);
-  background-position: bottom;
-  background-repeat: no-repeat;
   transition: 0.3s linear;
 }
 @media (max-width: 1024px) {
@@ -150,6 +146,12 @@
   background: #311169;
 }
 
-.dark_home {
-  background-color: #2d2d2d;
+.is_dark {
+  background: linear-gradient(21deg, rgb(0, 0, 0) 0%, rgb(113, 113, 113) 100%);
+  transition: 0.3s linear;
+}
+
+.is_light {
+  background: linear-gradient(21deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 80%);
+  transition: 0.3s linear;
 }/*# sourceMappingURL=Home.css.map */

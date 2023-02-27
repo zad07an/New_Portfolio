@@ -1,7 +1,6 @@
 @import '../../breakpoints';
 
 .project_component_container {
-  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,16 +10,6 @@
   border-radius: 15px;
   padding: 20px;
   transition: 0.3s linear;
-
-  @include mobile_xl {
-    width: 350px;
-  }
-  @include mobile_lg {
-    width: 300px;
-  }
-  @include mobile_md {
-    width: 270px;
-  }
 
   .project_component_image {
       width: 100%;

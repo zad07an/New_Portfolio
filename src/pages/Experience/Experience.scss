@@ -26,11 +26,9 @@
 
   .display_experience {
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
     padding: 60px 0;
     background: #7A3BE4;
     border-radius: 25px;

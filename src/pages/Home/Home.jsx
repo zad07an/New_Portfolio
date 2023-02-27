@@ -5,7 +5,7 @@ import './Home.css'
 export default function Home({ theme }) {
 
   const navigate = useNavigate()
-  const darkHome = theme ? 'dark_home' : '';
+  const darkHome = theme ? 'is_dark' : 'is_light';
   const darkButton = theme ? 'dark_button' : 'light_button'
   const darkText = {color: theme ? '#fff' : '#000'}
 
@@ -18,7 +18,7 @@ export default function Home({ theme }) {
             <h1 style={darkText}>Zadoyan</h1>
           </div>
           <div className="web_text">
-            <p style={darkText}>Hey there! I am Aram Zadoyan and I am a 22 years old Armenian Front-End developer.</p>
+            <p style={darkText}>Hey there! I am Aram Zadoyan and I am a 22 years old Armenian Front-End developer[ReactJS].</p>
           </div>
           <div className="banner_buttons">
             <button className={`join_button ${darkButton}`} onClick={() => navigate('/about')}>Read about me</button>

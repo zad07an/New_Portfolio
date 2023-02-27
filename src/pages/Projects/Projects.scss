@@ -61,11 +61,18 @@
 
       .projects_list {
           width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 20px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 40px 20px;
+          padding: 0 20px;
+
+          @include desktop_md {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          @include tablet_xs {
+            grid-template-columns: 1fr;
+          }
       }
   }
 }
