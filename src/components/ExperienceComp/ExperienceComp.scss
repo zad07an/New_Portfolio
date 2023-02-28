@@ -7,10 +7,10 @@
   justify-content: space-between;
   align-items: center;
   justify-self: center;
-  background: #000;
   padding: 0 60px;
-  border-radius: 15px;
   transition: 0.3s linear;
+  border-top: 3px solid #7E10D4;
+  border-bottom: 3px solid #7E10D4;
 
   @include tablet_lg {
     flex-direction: column-reverse;
@@ -62,6 +62,16 @@
       }
     }
 
+    .exp_name_is_odd {
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      @include tablet_lg {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
     .experience_percent {
       width: 100%;
       display: flex;
@@ -107,6 +117,14 @@
         }
       }
     }
+
+    .exp_name_is_odd {
+      align-items: flex-end;
+
+      @include tablet_lg {
+        align-items: center;
+      }
+    }
   }
 
   .experience_icon {
@@ -132,5 +150,14 @@
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+.is_odd {
+  flex-direction: row-reverse;
+
+  @include tablet_lg {
+    flex-direction: column-reverse;
+    padding: 20px 0;
   }
 }

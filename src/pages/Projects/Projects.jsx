@@ -10,21 +10,21 @@ export default function Projects({ theme }) {
   const containerDark = { background: theme ? '#2d2d2d' : '#fafafafa' }
   const projectsDark = { background: theme ? '#fafafafa' : '#2d2d2d' }
   const darkTitle = {color: theme ? '#fff' : '#000'}
-  const darkSubtitle = {color: theme ? '#000' : '#fff'}
+  const darkSubtitle = {color: theme ? '#fff' : '#000'}
 
   return (
     <section className='project_container' style={containerDark}>
         <div className="project_page_title">
             <h2 style={darkTitle}>Projects</h2>
         </div>
-        <div className="projects_banner" style={projectsDark}>
+        <div className="projects_banner">
             <div className="project_desc">
                 <p style={darkSubtitle}>Here is projects made by me</p>
             </div>
             <div className="projects_list">
             {
-              ProjectsData.map((project) => {
-                return <ProjectComp key={project.id} project={project} theme={theme} />
+              ProjectsData.map((project, idx) => {
+                return <ProjectComp key={project.id} idx={idx} project={project} theme={theme} />
               })
             }
             </div>

@@ -16,10 +16,10 @@ export default function Experience({ theme }) {
       <div className="experience_page_title">
         <h2 style={darkTitle}>Experience</h2>
       </div>
-      <div className="display_experience" style={darkDisplayExperience}>
+      <div className="display_experience">
         {
-          ExperienceData.map((exp) => {
-            return <ExperienceComp key={exp.id} exp={exp} theme={theme} />
+          ExperienceData.map((exp, idx) => {
+            return <ExperienceComp key={exp.id} idx={idx} exp={exp} theme={theme} />
           })
         }
       </div>
